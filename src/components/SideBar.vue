@@ -76,6 +76,7 @@
             v-model="useCalculationsStore().fianceProperty.loanLength"
             type="text"
             class="border-1 h-10 text-xl"
+            @input="useCalculationsStore().mortgageCalculation()"
           />
           <button
             :class="
@@ -114,6 +115,7 @@
             v-model="useCalculationsStore().fianceProperty.interestRate"
             type="text"
             class="border-1 h-10 text-xl w-72"
+            @input="useCalculationsStore().mortgageCalculation()"
           />
           <button
             class="bg-white text-black font-bold text-xl h-10 w-14"
@@ -136,6 +138,7 @@
             v-model="useCalculationsStore().fianceProperty.oneTimeExpenses"
             type="text"
             class="border-1 h-10 text-xl"
+            @input="useCalculationsStore().mortgageCalculation()"
           />
           <button
             :class="
@@ -176,6 +179,7 @@
             id="start_date"
             name="start_date"
             class="h-10 w-[340px] py-2 px-3 text-2xl"
+            @input="useCalculationsStore().mortgageCalculation()"
           />
         </div>
       </div>
